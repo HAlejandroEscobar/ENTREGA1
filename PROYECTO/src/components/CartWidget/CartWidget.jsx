@@ -1,4 +1,4 @@
-export default function CartWidget(){
+function CartWidget(){
     return (
     <>
 
@@ -11,3 +11,5 @@ export default function CartWidget(){
     </>
     )
 }
+
+export default CartWidget

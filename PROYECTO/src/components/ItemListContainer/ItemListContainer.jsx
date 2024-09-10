@@ -1,4 +1,4 @@
-export default function ItemListContainer({greeting}){
+function ItemListContainer({greeting}){
     return (
     <>
         <section>
@@ -7,3 +7,5 @@ export default function ItemListContainer({greeting}){
     </>
     )
 }
+
+export default ItemListContainer
