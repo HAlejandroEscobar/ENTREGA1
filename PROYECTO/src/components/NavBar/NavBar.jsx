@@ -2,7 +2,7 @@ import '../CartWidget/CartWidget'
 import CartWidget from '../CartWidget/CartWidget'
 import LOGO from '../img/LOGO.png'
 import  './NavBar.css'
-
+import {Link} from 'react-router-dom'
 
  function NavBar(){
     return (
@@ -10,15 +10,15 @@ import  './NavBar.css'
         <header class="header">
 
             <div class="logo">
-            <a href="#"><img src= {LOGO} alt="logo" /></a>
-            <li><a href="#">Tu Consola 🕹️</a></li>
+            <Link to={'/'}><img src= {LOGO} alt="logo" /></Link>
+            <li><Link to={'/'}>Tu Consola 🕹️</Link></li>
             </div>
 
             <nav>
                 <ul class="navlinks">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><Link to={'category/play'}>PlayStation</Link></li>
+                    <li><Link to={'category/xbox'}>Xbox</Link></li>
+                    <li><Link to={'category/nintendo'}>Nintendo</Link></li>
                 </ul>
             </nav>
             <CartWidget/>
